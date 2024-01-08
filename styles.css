@@ -1,0 +1,345 @@
+.logo{
+    width: 5%;
+}
+
+#search{
+    width: 25%;
+}
+
+*{
+    padding:0 ;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+
+/* Nav Styling */
+nav{
+    height: 80px;
+    width: 100%;
+    padding: 8px;
+
+}
+.enlace{
+    display: flex;
+    position: absolute;
+    padding: 5px 20px;
+    align-items: center;
+    color: black;
+   
+
+}
+
+#title{
+    padding-left: 8px;
+}
+nav ul{
+    float: right;
+    margin-right: 20px;
+}
+
+nav ul li {
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+}
+nav ul li a{
+    color: black;
+    font-size:18px;
+    padding: 7px 13px;
+    border-radius: 3px;
+    
+}
+
+li a.active, li a:hover{
+   font-weight: bolder;
+   transition: .5s;
+}
+
+.checkbtn{
+    font-size: 30px;
+    color: white;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    /* display: none; */
+}
+#check{
+    /* display: none */
+}
+
+/* Separadores styling */
+
+.line {
+    width: 95%;
+    border-bottom: 2px solid #D4D4D4;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 20px;
+}
+
+
+section{
+    display: flex;
+    flex-direction: column;
+    align-items:  center;
+}
+/* Section 1 styling */
+
+#section1{
+    background-image: url(./imagenes/foto\ de\ piscina.jpg) ;
+    background-size: cover;
+    transform: translate3d(0px, 0px, 0px);
+    background-position: center center;
+    z-index: -1;
+    /* filter: brightness(50%); */
+    
+}
+.introduction{
+    display: flex;
+    position: relative;
+    row-gap: 50%;
+    align-items: center;
+    color: white;
+    justify-content: space-between;
+}
+#experiencia{
+    font-size: 30px;
+}
+
+#titulo{
+    font-size: 90px;
+}
+/* img p {
+} */
+
+/* Section 2 who are we */
+.whoarewe{
+    font-size: 50px;
+    color: #0D154D;
+}
+
+
+#whoAreWe{
+color: #0782A5;
+    display: flex;
+    position: relative;
+
+}
+
+.learning{
+    width: 400px;
+    left: 30px;
+    right: 30px;
+    position: relative;
+    top: 30px;
+}
+#dedication{
+    top: 15px;
+    position: relative;
+    left: 60px;
+    width: 800px;
+    font-size: 36px;
+}
+
+/* Section 3  characteristics */
+
+.bestForYourChildren{
+  font-size: 50px;
+    color: #0D154D;
+
+}
+
+.characteristics{
+    display: flex;
+   left: 30px ;
+   right: 30px;
+   position: relative;
+
+}
+
+.charsOfImgs{
+    width: 300px;
+}
+
+#temperature{
+
+    color: #FF0040;
+
+}
+
+#water{
+    color: #6AA87B;
+}
+
+#groups{
+    color: #FF00FF;
+}
+
+#makeUp{
+    color: #FF9900;
+}
+
+
+
+/* section 4 classes */
+
+.ourClasses{
+    font-size: 50px;
+    padding-left: 40px;
+    padding-bottom: 30px;
+    color: #0D154D;
+}
+
+#roll{
+    background-color: #0782A2;
+    color: #F9F9F9;
+    margin-bottom:3px;
+    height: 420px;
+    width: 100%;
+   
+    
+}
+
+#inside{
+    
+    width: 100%;
+    margin-bottom: 8px;
+    
+    
+}
+#display{
+    display: flex;
+    row-gap: 30px;
+    justify-content: center;
+    align-items: center;
+    top: 20px;
+}
+
+#line{
+    border: 1px solid #066F8A;
+    top: 190px;
+    position: relative;
+}
+
+.title{
+    font-size: 32px;
+    
+}
+
+.paragraph{
+    font-size: 20px;
+    padding-top: 32px;
+    line-height: 1.5em;
+    width: 250px;
+    height: 150px;
+}
+
+.box{
+    padding-top: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 300px;
+    height: 200px;
+}
+
+/* Footer Styling */
+
+
+footer{
+    display: flex;
+    flex-direction: column;
+    color: #fff;
+    width: 100%;
+    align-items:  center;
+    float: bottom;
+    background-color: #0D154D;
+}
+footer div{
+    display: flex;
+}
+
+.whereAreWe{
+    width: 300px;
+    height: 200px;
+}
+
+.social-media{
+    
+    width:40px;
+    border-radius: 40px;
+    
+}
+.rows{
+    display:flex
+}
+.columns{
+    display:flex;
+    flex-direction: column;
+}
+
+.rows2{
+    display: flex ;
+    justify-content: center;
+}
+
+/* Responsive Styling */
+
+@media(max-width: 952px){
+.enlace{
+    padding-left: 20px;
+}
+nav ul li a{
+    font-size: 16px;
+}
+
+}
+
+@media(max-width: 858px){
+.checkbtn{
+    display: block;
+}
+ul{
+    position: fixed;
+    width: 50%;
+    height: 100vh;
+    background: white;
+    top: 80px;
+    left: -100%;
+    text-align: center;
+    transition: all .5s;
+}
+
+nav ul li{
+    display: block;
+    margin: 50px;
+    line-height: 30px;
+}
+    nav ul li a{
+        font-size: 20px;
+
+    }
+    li a:hover, li a.active{
+        background: none;
+        color:red;
+
+    }
+    #check:checked ~ ul{
+        left:0;
+    }
+}
+
+body  {
+    width: 100%;
+    display: grid;
+    gap: 2em;
+    grid-template-columns:
+    repeat(auto-fit,
+    mixmax(150px,1fr))
+    
+}
