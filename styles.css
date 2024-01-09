@@ -158,29 +158,41 @@ color: #0782A5;
    left: 30px ;
    right: 30px;
    position: relative;
+   justify-content: center;
 
 }
 
 .charsOfImgs{
     width: 300px;
+    height: 400px;
 }
 
 #temperature{
 
     color: #FF0040;
-
+    width: 130px;
 }
 
 #water{
     color: #6AA87B;
+    width: 130px;
 }
 
 #groups{
     color: #FF00FF;
+    width: 130px;
 }
 
 #makeUp{
     color: #FF9900;
+    width: 130px;
+}
+
+.boxOfPool{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
 }
 
 
