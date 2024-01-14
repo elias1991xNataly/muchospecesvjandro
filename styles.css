@@ -533,6 +533,8 @@ body {
 }
 
 
+/* @media only screen and (min-width:480px) and (max-width:1600){} */
+
 @media only screen and (max-width: 479px) {
     .introduction {
         display: flex;
@@ -576,23 +578,16 @@ body {
         row-gap: 150px;
     }
 
-   
+
     #roll {
         height: 1200px;
     }
 
-.mosaico{
-    display: flex;
-    flex-direction: column;
-}
+    .mosaico {
+        display: flex;
+        flex-direction: column;
+    }
 
 
 }
 
-@media (max-width: 592px) {}
-
-@media (min-width: 960px) {}
-
-@media (max-width: 600px),
-(max-width:720px) and (max-height:400px),
-(min-width:720px) and (max-height:400px) {}
