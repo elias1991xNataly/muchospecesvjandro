@@ -37,6 +37,7 @@ nav {
     padding: 5px 20px;
     align-items: center;
     color: black;
+    float: right;
 
 
 }
@@ -49,7 +50,6 @@ nav ul {
     float: right;
     margin-right: 20px;
     display: flex;
-    flex-direction: row;
     justify-content: center;
     padding-right: 30px;
     align-items: center;
@@ -496,7 +496,7 @@ footer div {
 
 @media(max-width: 952px) {
     .enlace {
-        padding-left: 100px;
+        margin-left: 100px;
         padding-top: 30px;
 
     }
@@ -521,6 +521,7 @@ footer div {
         left: -100%;
         text-align: center;
         transition: all .5s;
+        flex-direction: column;
     }
 
     nav ul li {
@@ -601,6 +602,10 @@ body {
         justify-content: space-between;
         row-gap: 150px;
     }
+    nav ul li a{
+        display: flex;
+        flex-direction: column;
+    }
 
 
     #roll {
@@ -615,3 +620,9 @@ body {
 
 }
 
+@media (max-width:300px){
+    nav ul li{
+        display: flex;
+        flex-direction: column;
+    }
+}
